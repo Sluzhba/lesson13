@@ -9,12 +9,12 @@
     <title>Lesson 13</title>
 </head>
 <body>
-    <div class="container-fluid p-3"> 
+    <div class="container-fluid min-vh-100 d-flex flex-column bg-dark text-light">
         <!-- First row with navbar -->
-        <div class="row mb-3"> 
-            <div class="col-12 border border-secondary rounded">
-                <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
-                    <div class="container-fluid">
+        <div class="row g-0"> <!-- Removed spacing between columns -->
+            <div class="col-12 border border-secondary">
+                <nav class="navbar navbar-expand-lg bg-dark m-0" data-bs-theme="dark">
+                    <div class="container-fluid px-3"> <!-- Added px-3 for horizontal padding -->
                       <a class="navbar-brand" href="#">L14</a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -48,12 +48,9 @@
         </div>
         
         <!-- Second row with main content -->
-        <div class="row g-3">
-            <!-- Carousel: 
-                 xs: 12 (full width)
-                 sm: 6 (half)
-                 md: 3 (quarter) -->
-            <div class="col-12 col-sm-6 col-md-3 border border-secondary rounded bg-dark">
+        <div class="row g-0 flex-grow-1"> <!-- Removed spacing between columns -->
+            <!-- Carousel -->
+            <div class="col-12 col-sm-6 col-md-3 border border-secondary bg-dark">
                 <div id="carousel" class="carousel slide vh-50 bg-dark">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -86,11 +83,8 @@
                 </div>
             </div>
             
-            <!-- Accordion in dark style:
-                 xs: 12 (full width)
-                 sm: 6 (half)
-                 md: 6 (half) -->
-            <div class="col-12 col-sm-6 col-md-6 border border-secondary rounded bg-dark">
+            <!-- Accordion -->
+            <div class="col-12 col-sm-6 col-md-6 border border-secondary bg-dark">
                 <div class="accordion" id="accordionMain" data-bs-theme="dark">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
@@ -214,11 +208,8 @@
                 </div>
             </div>
             
-            <!-- Form in dark style:
-                 xs: 12 (full width)
-                 sm: 12 (full width)
-                 md: 3 (quarter) -->
-            <div class="col-12 col-sm-12 col-md-3 border border-secondary rounded bg-dark text-light">
+            <!-- Form -->
+            <div class="col-12 col-sm-12 col-md-3 border border-secondary bg-dark text-light">
                 <h2 class="p-2">Registration Form</h2>
                 <form class="p-3">
                     <div class="mb-3">
@@ -255,9 +246,9 @@
         </div>
 
         <!-- Last row with footer -->
-        <div class="row mt-4">
-            <div class="col-12 border border-secondary rounded bg-dark text-light p-3">
-                <div class="d-flex justify-content-between align-items-center">
+        <div class="row g-0"> <!-- Removed spacing between columns -->
+            <div class="col-12 border border-secondary bg-dark text-light">
+                <div class="d-flex justify-content-between align-items-center m-2">
                     <div>
                         <h5>Support Ukraine</h5>
                         <p class="mb-0">
@@ -277,6 +268,6 @@
                 </div>
             </div>
         </div>
-    </div> <!-- Closing container-fluid -->
+    </div>
 </body>
 </html>
