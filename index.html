@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="assets/bootstrap.min.css">
     <title>Lesson 13</title>
 </head>
-<body class="bg-dark">
+<body class="bg-dark vh-100 ">
         <!-- Header -->
-        <header class="mb-3">
-            <nav class="navbar navbar-expand-lg bg-danger" data-bs-theme="dark">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-danger mb-5" data-bs-theme="dark">
                 <div class="container px-3">
                     <a class="navbar-brand" href="#">L14</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,11 +45,11 @@
         </header>
         
         <!-- Main content -->
-        <main class="flex-grow-1 mx-4">
-            <div class="row g-1 py-4"> 
+        <div class="container">
+            <div class="row"> 
                 <!-- Carousel -->
-                <div class="col-xxl-3 col-xl-4 col-xl-6 column-gap-2 mb-3 border border-secondary bg-dark">
-                    <div id="carousel" class="carousel slide vh-50 bg-dark">
+                <aside class="col-xxl-3 col-xl-4 col-xl-6  border border-secondary bg-dark">
+                    <div id="carousel" class="carousel slide bg-dark">
                         <div class="carousel-indicators">
                           <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                           <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -79,10 +79,10 @@
                           <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-                </div>
+                </aside>
                 
                 <!-- Accordion -->
-                <div class="col-xxl-6 col-xl-6 mb-3 border border-secondary bg-dark">
+                <main class="col-xxl-6 col-xl-6 border border-secondary bg-dark">
                     <div class="accordion" id="accordionMain" data-bs-theme="dark">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
@@ -204,10 +204,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </main>
                 
                 <!-- Form -->
-                <div class="col-xxl-3 col-xl-12 mb-3 border border-secondary bg-dark text-light">
+                <aside class="col-xxl-3 col-xl-12 border border-secondary bg-dark text-light">
                     <h2 class="p-2">Registration Form</h2>
                     <form class="p-3">
                         <div class="mb-3">
@@ -240,12 +240,12 @@
                             <button type="reset" class="btn btn-secondary">Reset</button>
                         </div>
                     </form>
-                </div>
+                </aside>
             </div>
-        </main>
+        </div>
 
         <!-- Footer -->
-        <footer class="my-3">
+        <footer class="container">
             <div class="d-flex justify-content-between align-items-center p-3 text-light">
                 <div>
                     <h5>Support Ukraine</h5>
